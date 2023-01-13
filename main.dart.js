@@ -68877,7 +68877,7 @@ r.h7()
 r.r4()},
 r4(){var s=0,r=A.X(t.z),q=1,p,o=this,n,m,l,k,j,i,h,g
 var $async$r4=A.T(function(a,b){if(a===1){p=b
-s=q}while(true)switch(s){case 0:h=A.acP("http","20.175.138.194:5000","/classrooms",null)
+s=q}while(true)switch(s){case 0:h=A.acP("https","20.175.138.194:5000","/classrooms",null)
 q=3
 s=6
 return A.Y(A.afa(h).ki(0,B.cB),$async$r4)
@@ -69012,7 +69012,7 @@ $1(a){return this.NE(a)},
 NE(a){var s=0,r=A.X(t.H),q=this,p,o,n,m,l
 var $async$$1=A.T(function(b,c){if(b===1)return A.U(c,r)
 while(true)switch(s){case 0:s=2
-return A.Y(A.afa(A.acP("http","20.175.138.194:5000","/classroom/"+a,null)).ki(0,B.cB),$async$$1)
+return A.Y(A.afa(A.acP("https","20.175.138.194:5000","/classroom/"+a,null)).ki(0,B.cB),$async$$1)
 case 2:o=c
 n=J.aU(B.an.mt(0,A.Qn(A.Qa(o.e).c.a.h(0,"charset")).cI(0,o.w),null),"value")
 m=q.a
@@ -69058,7 +69058,7 @@ m.fr.sbN(0,a)
 s=a!=="GROUND - CURRENT LOCATION"?2:4
 break
 case 2:s=5
-return A.Y(A.afa(A.acP("http","20.175.138.194:5000","/classroom/"+a,null)).ki(0,B.cB),$async$$1)
+return A.Y(A.afa(A.acP("https","20.175.138.194:5000","/classroom/"+a,null)).ki(0,B.cB),$async$$1)
 case 5:p=c
 o=J.aU(B.an.mt(0,A.Qn(A.Qa(p.e).c.a.h(0,"charset")).cI(0,p.w),null),"value")
 n=J.as(o)
@@ -69111,7 +69111,7 @@ s=s.b
 p=k.as
 o=k.z
 n=t.N
-m=A.acP("http","20.175.138.194:5000","/route",A.b(["start_lat",A.k(q),"start_lon",A.k(s),"start_level",""+p,"end_lat",A.k(o.a),"end_lon",A.k(o.b),"end_level",""+k.at,"indoor_weight","1"],n,n))
+m=A.acP("https","20.175.138.194:5000","/route",A.b(["start_lat",A.k(q),"start_lon",A.k(s),"start_level",""+p,"end_lat",A.k(o.a),"end_lon",A.k(o.b),"end_level",""+k.at,"indoor_weight","1"],n,n))
 A.ow(m.gyM())
 l.a=null
 A.afa(m).ki(0,B.cB).be(new A.ad5(l,k),t.am)}},
