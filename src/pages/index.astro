@@ -1,0 +1,52 @@
+---
+import { Content as AboutMe } from './aboutme.md'
+import { Content as Skills } from './skills.md'
+---
+
+<html lang="en" class="font-mono font-medium">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <title>Vishal Jayakumar | CS at UWaterloo</title>
+  </head>
+  <body class="text-slate-200 text-lg min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
+    <div class="mx-5 sm:mx-24 md:mx-48 lg:mx-64 xl:mx-80 2xl:mx-[30rem] pt-16 mb-16">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl">Vishal Jayakumar</h1>
+      <div class="mt-5">
+        <a href="mailto:v3jayaku@uwaterloo.ca" class="text-slate-300 hover:text-blue-300 hover:underline">email</a>
+        <a href="https://github.com/VishGit1234" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">github</a>
+        <a href="https://www.linkedin.com/in/vish-jay/" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">linkedin</a>
+      </div>
+      <hr class="my-5">
+      <div class="hidden md:inline-block"><AboutMe/></div>
+      <h2 class="mt-10 text-2xl sm:text-3xl lg:text-4xl">Skills</h2>
+      <hr class="my-5 font-extrabold">
+      <div><Skills/></div>
+      <h2 class="mt-10 text-2xl sm:text-3xl lg:text-4xl">Experience</h2>
+      <hr class="my-5">
+      <div class="lg:text-2xl">
+        <div class="mb-8">
+          <div class="float-left">Python Developer</div>
+          <div class="float-right">Sep 2024 - Dec 2024</div>
+          <br>
+          <div class="italic text-base lg:text-lg">Burkett Statistical Consulting</div>
+        </div>
+        <div class="mb-8">
+          <div class="float-left">WiFi Software Test Developer</div>
+          <div class="float-right">Jan 2024 - Apr 2024</div>
+          <br>
+          <div class="italic text-base lg:text-lg">Ford Motor Company</div>
+        </div>
+        <div class="mb-8">
+          <div class="float-left">Junior Data Scientist Intern</div>
+          <div class="float-right">Jul 2023 - Sep 2023</div>
+          <br>
+          <div class="italic text-base lg:text-lg">Exponential Exchange</div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </body>
+</html>
