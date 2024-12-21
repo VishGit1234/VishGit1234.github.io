@@ -1,1 +1,1 @@
-I'm currently a third year Computer Science student at the University of Waterloo and am passionate about all things software 💻, especially data science 📈. Through multiple internships, I've had the opportunity to develop software in a variety of environments for many different projects.
+I'm currently a third year Computer Science student at the University of Waterloo and am passionate about all things software and robotics. Through multiple internships, I've had the opportunity to develop software in a variety of environments for many different projects.
