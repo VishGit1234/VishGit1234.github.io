@@ -1,4 +1,4 @@
-**Languages**: Python, C/C++, C#, HTML/CSS, SQL, R, Bash
+**Languages**: Python, C/C++, C#, HTML/CSS, SQL, R, Bash, Javascript
 
 **Frameworks**: ROS, AWS, .NET, Selenium
 
