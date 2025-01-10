@@ -7,10 +7,10 @@ import jobs from '../content/experience.json'
 ---
 <div class="lg:text-2xl">
   {
-    jobs.slice(0, -1).map((job, i, arr) => (
+    jobs.slice(0, -1).map((job) => (
       <div class='mb-8'>
         <div class="float-left">{job.title}</div>
-        <div class="float-right">{job.duration}</div>
+        <div class="float-right mx-4">{job.duration}</div>
         <br>
         <div class="italic text-base lg:text-lg">{job.company}</div>
       </div>
@@ -18,7 +18,7 @@ import jobs from '../content/experience.json'
   }
   <div class='mb-4'>
         <div class="float-left">{jobs.slice(-1)[0].title}</div>
-        <div class="float-right">{jobs.slice(-1)[0].duration}</div>
+        <div class="float-right mx-4">{jobs.slice(-1)[0].duration}</div>
         <br>
         <div class="italic text-base lg:text-lg">{jobs.slice(-1)[0].company}</div>
   </div>
