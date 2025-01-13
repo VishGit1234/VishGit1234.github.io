@@ -6,6 +6,8 @@ import Section from '../components/section.astro'
 import Experiences from '../components/experiences.astro'
 import Experience from '../components/experience.jsx'
 import Projects from '../components/projects.astro'
+import { Image } from 'astro:assets';
+import ProfileImage from '../images/photo.jpg'
 ---
 
 <html lang="en" class="font-mono font-medium">
@@ -19,8 +21,10 @@ import Projects from '../components/projects.astro'
   <body class="text-slate-200 text-lg min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
     <div class="mx-5 sm:mx-28 md:mx-40 lg:mx-[14rem] xl:mx-[18rem] 2xl:mx-[18rem] pt-16 mb-16">
       <div class="flex">
-        <img class="mr-16 rounded-full" src="/src/images/photo.jpg">
-        <div class="inline">
+        <div>
+          <Image class="mr-16 rounded-full" src={ ProfileImage } alt="fun photo of me!"></Image>
+        </div>
+        <div class="inline mt-auto">
           <h1 class="text-3xl sm:text-4xl lg:text-5xl">Vishal Jayakumar</h1>
           <div class="mt-5">
             <a href="mailto:v3jayaku@uwaterloo.ca" class="text-slate-300 hover:text-blue-300 hover:underline">email</a>
@@ -44,8 +48,8 @@ import Projects from '../components/projects.astro'
         <Projects/>
       </Section>
       <div class="mt-24 -mb-4 text-sm lg:text-base text-slate-300">
-        Built with <b><a class="hover:text-blue-300" href="https://astro.build/" target="_blank">Astro</a></b>
-        , <b><a class="hover:text-blue-300" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></b> and
+        Built with <b><a class="hover:text-blue-300" href="https://astro.build/" target="_blank">Astro</a></b>,
+         <b><a class="hover:text-blue-300" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></b> and
         <b><a class="hover:text-blue-300" href="https://react.dev/" target="_blank">React</a></b>.
       </div>
     </div>
