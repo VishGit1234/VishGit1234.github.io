@@ -1,8 +1,11 @@
 ---
 import { Content as AboutMe } from '../content/aboutme.md'
 import { Content as Skills } from '../content/skills.md'
+import { Content as Description } from '../content/description.md'
 import Section from '../components/section.astro'
-import Experience from '../components/experience.astro'
+import Experiences from '../components/experiences.astro'
+import Experience from '../components/experience.jsx'
+import Projects from '../components/projects.astro'
 ---
 
 <html lang="en" class="font-mono font-medium">
@@ -15,39 +18,35 @@ import Experience from '../components/experience.astro'
   </head>
   <body class="text-slate-200 text-lg min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
     <div class="mx-5 sm:mx-28 md:mx-40 lg:mx-[14rem] xl:mx-[18rem] 2xl:mx-[18rem] pt-16 mb-16">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl">Vishal Jayakumar</h1>
-      <p class="md:hidden">CS Undergrad @ uWaterloo</p>
-      <div class="mt-5">
-        <a href="mailto:v3jayaku@uwaterloo.ca" class="text-slate-300 hover:text-blue-300 hover:underline">email</a>
-        <a href="https://github.com/VishGit1234" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">github</a>
-        <a href="https://www.linkedin.com/in/vish-jay/" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">linkedin</a>
-        <a href="https://scholar.google.ca/citations?user=lh_Y0ZsAAAAJ&hl=en" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">scholar</a>
+      <div class="flex">
+        <img class="mr-16 rounded-full" src="/src/images/photo.jpg">
+        <div class="inline">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl">Vishal Jayakumar</h1>
+          <div class="mt-5">
+            <a href="mailto:v3jayaku@uwaterloo.ca" class="text-slate-300 hover:text-blue-300 hover:underline">email</a>
+            <a href="https://github.com/VishGit1234" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">github</a>
+            <a href="https://www.linkedin.com/in/vish-jay/" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">linkedin</a>
+            <a href="https://scholar.google.ca/citations?user=lh_Y0ZsAAAAJ&hl=en" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">scholar</a>
+            <!-- <a href="/posts/" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">blog</a> -->
+          </div>
+        </div>
       </div>
+
       <hr class="my-5">
       <div class="hidden md:inline-block"><AboutMe/></div>
       <Section title="Skills">
         <Skills/>
       </Section>
-      <Section title="Experience">
-        <Experience/>
+      <Section title="Work Experience">
+        <Experiences/>
       </Section>
-      <!-- <Section title="Projects & Other Experience">
-        TODO: Add projects and WATOnomous
-        <div class="h-28 p-4 backdrop-blur-lg bg-slate-300/10 rounded-lg">
-          <div class="float-left">Software Team Lead</div>
-          <div class="float-right">Sept 2023 - Present</div>
-          <br>
-          <div class="italic text-base lg:text-lg">
-            <a href="https://www.watonomous.ca/" target="_blank" class="inline-flex text-slate-300 hover:text-blue-300 fill-slate-300 hover:fill-blue-300">
-              <div class="mr-2">WATonomous</div>  
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -1100 960 960" width="20px"><path d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z"/></svg>
-            </a>
-          </div>
-        </div>
-      </Section> -->
+      <Section title="Projects & Other Experience">
+        <Projects/>
+      </Section>
       <div class="mt-24 -mb-4 text-sm lg:text-base text-slate-300">
         Built with <b><a class="hover:text-blue-300" href="https://astro.build/" target="_blank">Astro</a></b>
-        and <b><a class="hover:text-blue-300" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></b>.
+        , <b><a class="hover:text-blue-300" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></b> and
+        <b><a class="hover:text-blue-300" href="https://react.dev/" target="_blank">React</a></b>.
       </div>
     </div>
   </body>

@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Robotics & RL Researcher",
+    "company": "Autonomy Research Group - WATOnomous",
+    "duration": "October 2023 - Present",
+    "description" : [
+      "Conducted an in-depth literature review on both classical and deep-learning based (RNN, LSTM, Bi-LSTM with attention, etc.) Driver Intention Inference schemes and synthesized findings",
+      "Adapted Hybrid Policy Optimization algorithm to use MPC demonstrations to guide reinforcement learning",
+      "Wrote custom SAC implementation in PyTorch to get baselines for experimental validation"
+    ]
+  },
+  {
+    "title": "Autonomy Software Lead",
+    "company": "WATOnomous",
+    "duration": "October 2023 - Present",
+    "description" : [
+      "Used Docker, CARLA and ROS2 to leverage in-house HPC cluster for high-fidelity AV simulation",
+      "Led team of 10 in development of ROS2 nodes for various world-modeling solutions for autonomy stack"
+    ]
+  }
+]

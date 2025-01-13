@@ -3,24 +3,20 @@
 Work Experience (loaded from experience.json)
 */
 
-import jobs from '../content/experience.json'
+import jobs from '../content/experiences.json'
+import Experience from './experience.jsx'
 ---
-<div class="lg:text-2xl">
+
+<div>
   {
     jobs.slice(0, -1).map((job) => (
       <div class='mb-8'>
-        <div class="float-left">{job.title}</div>
-        <div class="float-right mx-4">{job.duration}</div>
-        <br>
-        <div class="italic text-base lg:text-lg">{job.company}</div>
+        <Experience client:load title={job.title} duration={job.duration} company={job.company} description={job.description}/>
       </div>
     ))
   }
   <div class='mb-4'>
-        <div class="float-left">{jobs.slice(-1)[0].title}</div>
-        <div class="float-right mx-4">{jobs.slice(-1)[0].duration}</div>
-        <br>
-        <div class="italic text-base lg:text-lg">{jobs.slice(-1)[0].company}</div>
+    <Experience client:load title={jobs.slice(-1)[0].title} duration={jobs.slice(-1)[0].duration} company={jobs.slice(-1)[0].company} description={jobs.slice(-1)[0].description}/>
   </div>
   <a href="/Vishal_Resume.pdf" target="_blank" class="text-lg lg:text-xl inline-flex text-slate-300 hover:text-blue-300 fill-slate-300 hover:fill-blue-300">
     <div class="mr-2">resume</div>  

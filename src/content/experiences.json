@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Python Developer",
+    "company": "Burkett Statistical Consulting",
+    "duration": "Sep 2024 - Dec 2024",
+    "description" : [
+      "Used Pandas for data processing of utility meter data, producing a 90% smaller clean dataset",
+      "Engineered features for EV load prediction and fitted numerous machine learning models achieving 80% accuracy",
+      "Automated assembly line scheduling using Google OR-tools, Python and R, reducing manual effort and achieving a potential 5% reduction in production costs while meeting all production constraints."
+    ]
+  },
+  {
+    "title": "WiFi Software Test Developer",
+    "company": "Ford Motor Company",
+    "duration": "Jan 2024 - Apr 2024",
+    "description" : [
+      "Implemented and tested Python automation test scripts, using the Slash testing framework, for in-vehicle WiFi connectivity modules extending test coverage to new hardware automating 10% of manual testing"
+    ]
+  },
+  {
+    "title": "Junior Data Scientist Intern",
+    "company": "Exponential Exchange",
+    "duration": "Jul 2023 - Sep 2023",
+    "description" : [
+      "Scraped price history of over 30 major market indices using Selenium and Python for data analysis",
+      "Used Snowflake and SQL to compute correlations and created an interactive dashboard in Looker to visualize and compare the different indices"
+    ]
+  },
+  {
+    "title": "Junior Software Engineer Intern",
+    "company": "Inwards Inc.",
+    "duration": "May 2023 - Aug 2023",
+    "description" : [
+      "Upgraded company website using HTML/CSS, JavaScript & PHP, adding pages and improving load times by 50%"
+    ]
+  }
+]
