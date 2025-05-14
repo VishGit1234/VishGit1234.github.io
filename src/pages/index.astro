@@ -1,13 +1,10 @@
 ---
 import { Content as AboutMe } from '../content/aboutme.md'
 import { Content as Skills } from '../content/skills.md'
-import { Content as Description } from '../content/description.md'
 import Section from '../components/section.astro'
 import Experiences from '../components/experiences.astro'
-import Experience from '../components/experience.jsx'
 import Projects from '../components/projects.astro'
-import { Image } from 'astro:assets';
-import ProfileImage from '../images/photo.jpg'
+import NavBar from '../components/navBar.astro'
 ---
 
 <html lang="en" class="font-mono font-medium">
@@ -20,23 +17,7 @@ import ProfileImage from '../images/photo.jpg'
   </head>
   <body class="text-slate-200 text-lg min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
     <div class="mx-5 sm:mx-28 md:mx-40 lg:mx-[14rem] xl:mx-[18rem] 2xl:mx-[18rem] pt-16 mb-16">
-      <div class="flex">
-        <div>
-          <Image class="mr-16 rounded-full" src={ ProfileImage } alt="fun photo of me!"></Image>
-        </div>
-        <div class="inline mt-auto">
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl">Vishal Jayakumar</h1>
-          <div class="mt-5">
-            <a href="mailto:v3jayaku@uwaterloo.ca" class="text-slate-300 hover:text-blue-300 hover:underline">email</a>
-            <a href="https://github.com/VishGit1234" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">github</a>
-            <a href="https://www.linkedin.com/in/vish-jay/" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">linkedin</a>
-            <a href="https://scholar.google.ca/citations?user=lh_Y0ZsAAAAJ&hl=en" target="_blank" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">scholar</a>
-            <!-- <a href="/posts/" class="text-slate-300 ml-5 hover:text-blue-300 hover:underline">blog</a> -->
-          </div>
-        </div>
-      </div>
-
-      <hr class="my-5">
+      <NavBar/>
       <div class="hidden md:inline-block"><AboutMe/></div>
       <Section title="Skills">
         <Skills/>
