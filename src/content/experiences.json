@@ -3,7 +3,7 @@
     "title": "Cloud Database Engine Developer",
     "company": "SAP",
     "duration": "May 2025 - Aug 2025",
-    "description" : []
+    "description" : ["Implemented incremental view maintenance algorithms in Scala and Spark for data lakes, enabling self-updating views and efficient data refresh"]
   },
   {
     "title": "Python Developer",
